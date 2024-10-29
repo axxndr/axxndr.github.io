@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Media Manager Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/c4254e24a8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Hello!</p>
+          <h1>I'm<span> Ola</span><br />Social Media Ninja</h1>
+        </div>
+      </div>
+    </div>
+    <!-- -----------about---------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Social media ninja with a flair for engaging content! Working at
+              RMF MAXX radio and bringing energy to the Student Council
+              Marketing Team for over three years, where I coordinate Instagram
+              campaigns and execute standout events like Juwenalia Krakowskie,
+              HackOptiver, and D0 AGH. Passionate about creating experiences
+              that resonate and making every post count!
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Social Media Management</span><br />Crafting impactful,
+                  engaging online presence
+                </li>
+                <li>
+                  <span>Event Coordination</span><br />Organizing memorable,
+                  large-scale events
+                </li>
+                <li>
+                  <span>Content Strategy</span><br />Developing creative,
+                  audience-focused campaigns
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2024 - Current</span><br />Brand Ambassador | Apple -
+                  iSpot
+                </li>
+                <li>
+                  <span>2024 - Current</span><br />Social Media Ninja | RMF MAXX
+                </li>
+                <li>
+                  <span>2021 - Current</span><br />Marketing Team | URSS AGH
+                </li>
+                <li>
+                  <span>2022 - 2024</span><br />Business Analyst | Hitachi
+                  Energy Services
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2021-2024</span><br />IT & Econometrics | AGH</li>
+                <li><span>2024-2026</span><br />IT - Data Science | AGH</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ---------services---------------- -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fas fa-code"></i>
+            <h2>Event Planning</h2>
+            <p>
+              Organizing events from concept to execution, ensuring
+              unforgettable experiences and smooth operations.
+            </p>
+            <a href="#">Up!</a>
+          </div>
+          <div>
+            <i class="fas fa-crop-alt"></i>
+            <h2>SM Strategy</h2>
+            <p>
+              Creating tailored content strategies and managing platforms to
+              boost engagement and reach.
+            </p>
+            <a href="#">Up!</a>
+          </div>
+          <div>
+            <i class="fab fa-app-store"></i>
+            <h2>Content Creation & Branding</h2>
+            <p>
+              Developing visuals and copy that align with brand identity,
+              building a cohesive and recognizable presence.
+            </p>
+            <a href="#">Up!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ----------gallery------------ -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">Gallery</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png" />
+            <div class="layer">
+              <h3>RMF MAXX Content</h3>
+              <p>
+                Your favorite hits and exclusive music content are just a click
+                away. Stay tuned with RMF MAXX!
+              </p>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" />
+            <div class="layer">
+              <h3>URSS AGH Content</h3>
+              <p>
+                Driving impactful social media strategies and coordinating
+                large-scale events to elevate brand presence and connect with
+                our community.
+              </p>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" />
+            <div class="layer">
+              <h3>Apple iSpot Content</h3>
+              <p>
+                Explore the latest in Apple technology and learn how to maximize
+                productivity with iSpot's unique offerings.
+              </p>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">Up!</a>
+      </div>
+    </div>
+    <!-- ----------contact------------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fas fa-paper-plane"></i> aleksandrapalka12@gmail.com
+            </p>
+            <p><i class="fas fa-phone-square-alt"></i>+48 881 248 353</p>
+            <div class="social-icons">
+              <a href="https://facebook.com/"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href=""><i class="fab fa-twitter-square"></i></a>
+              <a href=""><i class="fab fa-instagram"></i></a>
+              <a href=""><i class="fab fa-linkedin"></i></a>
+            </div>
+            <a href="images/my-cv.pdf" download class="btn btn2"
+              >Download my CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet" id="contact-form">
+              <input
+                type="text"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <select name="Subject" required>
+                <option value="" disabled selected>Select Subject</option>
+                <option value="General Inquiry">General Inquiry</option>
+                <option value="Project Proposal">Project Proposal</option>
+                <option value="Collaboration">Collaboration</option>
+              </select>
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+                required
+              ></textarea>
+              <div id="additional-field" style="display: none">
+                <label>Additional Information:</label>
+                <textarea
+                  name="AdditionalInfo"
+                  rows="4"
+                  placeholder="Any other details"
+                ></textarea>
+              </div>
+              <input type="submit" class="btn btn2" value="Send Message" />
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Designed by Aleksandra Palka</p>
+        <p id="clock"></p>
+        <!-- Zegar zostanie wyświetlony tutaj -->
+      </div>
+    </div>
+
+    <script>
+      // Funkcjonalność zakładek
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link"); // Usuwa aktywną klasę z wszystkich zakładek
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab"); // Usuwa aktywną klasę z wszystkich treści zakładek
+        }
+        event.currentTarget.classList.add("active-link"); // Ustawia aktywną klasę dla klikniętej zakładki
+        document.getElementById(tabname).classList.add("active-tab"); // Ustawia aktywną klasę dla odpowiedniej treści
+      }
+    </script>
+
+    <script>
+      // Funkcjonalność menu
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0"; // Otwiera menu, ustawiając jego pozycję
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px"; // Zamyka menu, przesuwając je poza widok
+      }
+    </script>
+
+    <script>
+      // Obsługa wysyłania formularza i walidacji
+      const scriptURL =
+        "<https://script.google.com/macros/s/AKfycbwzwln73g0P4Qlqow7PQLrQcHX9Pg5Ztxw0FdGcAdCXp10zN7Ki3SviiXXCXyjO7tcS/exec>"; // Wstaw link do swojego skryptu
+      const form = document.getElementById("contact-form");
+      const msg = document.getElementById("msg");
+
+      // Obsługa zmiany tematu
+      const subjectSelect = form.querySelector("select[name='Subject']");
+      subjectSelect.addEventListener("change", function () {
+        const additionalField = document.getElementById("additional-field");
+        if (this.value === "Collaboration") {
+          additionalField.style.display = "block"; // Wyświetla dodatkowe pole, gdy wybrano temat "Współpraca"
+        } else {
+          additionalField.style.display = "none"; // Ukrywa dodatkowe pole w pozostałych przypadkach
+        }
+      });
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault(); // Zapobiega domyślnej akcji formularza
+
+        // Podstawowa walidacja
+        const email = form.Email.value;
+        const message = form.Message.value;
+
+        if (!validateEmail(email)) {
+          msg.innerHTML = "Please enter a valid email address."; // Komunikat o błędzie dla nieprawidłowego adresu e-mail
+          return;
+        }
+
+        if (message.length < 10) {
+          msg.innerHTML = "Message must be at least 10 characters long."; // Komunikat o błędzie dla za krótkiej wiadomości
+          return;
+        }
+
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully"; // Komunikat o pomyślnym wysłaniu wiadomości
+            setTimeout(function () {
+              msg.innerHTML = ""; // Ukrywa komunikat po 5 sekundach
+            }, 5000);
+            form.reset(); // Resetuje formularz
+            localStorage.setItem("userEmail", email); // Zapisuje adres e-mail użytkownika w lokalnej pamięci
+          })
+          .catch((error) => console.error("Error!", error.message)); // Obsługuje błędy
+      });
+
+      // Funkcja walidacji adresu e-mail
+      function validateEmail(email) {
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Reguła do walidacji adresu e-mail
+        return re.test(String(email).toLowerCase()); // Zwraca prawdę, jeśli adres jest prawidłowy
+      }
+
+      // Ładowanie zapisanego adresu e-mail przy ładowaniu strony
+      window.onload = function () {
+        const savedEmail = localStorage.getItem("userEmail"); // Pobiera zapisany adres e-mail
+        if (savedEmail) {
+          form.Email.value = savedEmail; // Wypełnia pole e-mail zapisanym adresem
+        }
+        startClock(); // Rozpoczyna zegar przy ładowaniu strony
+      };
+
+      // Funkcja do uruchamiania zegara
+      function startClock() {
+        const clockElement = document.getElementById("clock");
+        setInterval(() => {
+          const now = new Date();
+          clockElement.innerText = now.toLocaleTimeString(); // Formatuje czas jako HH:MM:SS
+        }, 1000); // Aktualizuje co sekundę
+      }
+    </script>
+  </body>
+</html>
